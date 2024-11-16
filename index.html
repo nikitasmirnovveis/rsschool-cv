@@ -4,34 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
 
   <header class="header">
-    <h1 class="title">Nikita Smirnov</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work-experience">Work Experience</a></li>
-        <li><a href="#education">Education</a></li>
-      </ul>
-    </nav>
+    <div class="content">
+      <div class="photo-and-name">
+        <img class="photo" src="nikita.PNG" alt="Nikita Smirnov face photo">
+        <h1 class="title">Nikita Smirnov</h1>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+    </div>
+
   </header>
 
   <main class="main">
     <section class="contact">
       <h2>Contact</h2>
-      <ul>
-        <li>Email: nsmirnov2000.kz@gmail.com</li>
+      <ul class="contact-list">
+        <li><a href="mailto: nsmirnov2000.kz@gmail.com">nsmirnov2000.kz@gmail.com</a></li>
         <li><a href="https://www.linkedin.com/in/smirnov-nikita/">LinkedIn</a></li>
         <li><a href="https://github.com/nikitasmirnovveis">GitHub</a></li>
         <li><a href="https://gitlab.com/nikitasmirnovveis">GitLab</a></li>
       </ul>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <h2>About</h2>
       <p>Hi, I'm Nikita Smirnov - Angular 17+ and Vue 2 frontend developer starting summer 2023 previously located in
         Toronto, Canada, but currently in Almaty, Kazakhstan</p>
@@ -39,7 +46,7 @@
         <h3>Skills</h3>
         <div>
           <h4>Hard</h4>
-          <ul class="skills-list">
+          <ul class="skills-list hard">
             <li>Angular 17+</li>
             <li>Vue 2</li>
             <li>Laravel</li>
@@ -55,7 +62,7 @@
         </div>
         <div>
           <h4>Soft</h4>
-          <ul class="skills-list">
+          <ul class="skills-list soft">
             <li>English <span>IELTS 7.5</span></li>
             <li>Russian <span>native</span></li>
             <li>French <span>A1</span></li>
@@ -65,7 +72,7 @@
       </div>
     </section>
 
-    <section class="work-experience">
+    <section class="work-experience" id="work-experience">
       <h2>Work Experience</h2>
       <ul>
         <li>Frontend Developer</li>
@@ -74,10 +81,10 @@
       </ul>
     </section>
 
-    <section class="education">
+    <section class="education" id="education">
       <h2>Education</h2>
-        <h3>Computer Engineering Technology</h3>
-        <h4>Advanced Diploma with Honors • Humber College, Toronto, Canada • Sep 2018 – Apr 2021</h4>
+      <h3>Computer Engineering Technology</h3>
+      <h4>Advanced Diploma with Honors • Humber College, Toronto, Canada • Sep 2018 – Apr 2021</h4>
     </section>
 
     <section class="projects">
@@ -87,43 +94,45 @@
 
     <section class="code">
       <h2>Random piece of code</h2>
-      <p>Well, not so random - once the was a college task that was written incorrecty and I actually managed to finish the task following the incorrect criteria, then feeling smart I uploade it to StackOverflow, but it got deleted 2 times because... StackOverflow. I pray for their downfall from that point</p>
-      <code>
-        public static void main(String[] args) 
-        {
-          double bs=5000, com;
-          
-          System.out.print("\nPlease enter the amount you want to earn and see the sales needed to be done:\n");
-          Scanner in = new Scanner(System.in);
-          double sa = in.nextDouble();       
-          
-          double sales;
-          if (sa>0 && sa<=400)
-          {
-             sales = sa / 0.08;
-             System.out.print("first");
-          }
-          else if (sa>=400.001 && sa<=900)
-          {
-              sales = ((sa-400)/0.1)+(400/0.08);      
-              System.out.print("second");
-          }
-          else
-          {
-              sales = (((sa-(5000*0.08)-(5000*0.1))/0.12) +10000);
-              System.out.print("third");                 
-          }     
-          System.out.print(sales);
-        }
-      </code>
+      <p>Well, not so random - once the was a college task that was written incorrecty and I actually managed to finish
+        the task following the incorrect criteria, then feeling smart I uploade it to StackOverflow, but it got deleted
+        2 times because... StackOverflow. I pray for their downfall from that point</p>
+      <pre>
+        <code>public static void main(String[] args) 
+{
+  double bs=5000, com;
+  
+  System.out.print("\nPlease enter the amount you want to earn and see the sales needed to be done:\n");
+  Scanner in = new Scanner(System.in);
+  double sa = in.nextDouble();       
+  
+  double sales;
+  if (sa>0 && sa<=400)
+  {
+      sales = sa / 0.08;
+      System.out.print("first");
+  }
+  else if (sa>=400.001 && sa<=900)
+  {
+      sales = ((sa-400)/0.1)+(400/0.08);      
+      System.out.print("second");
+  }
+  else
+  {
+      sales = (((sa-(5000*0.08)-(5000*0.1))/0.12) +10000);
+      System.out.print("third");                 
+  }     
+  System.out.print(sales);
+}       </code>
+      </pre>
     </section>
 
   </main>
 
   <footer class="footer">
-    <p>© 2024</p>
-    <a href="https://github.com/nikitasmirnovveis">GitHub</a>
-    <a href="https://rs.school/courses/javascript">RSSchool</a>
+    <div>© 2024</div>
+    <a href="https://github.com/nikitasmirnovveis"><img src="github-logo.png" alt="my github profile (logo)"></a>
+    <a href="https://rs.school/courses/javascript"><img src="rs-school-logo.svg" alt="RS School (logo)"></a>
   </footer>
 
 </body>
