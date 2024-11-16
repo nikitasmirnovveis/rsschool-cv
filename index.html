@@ -31,7 +31,7 @@
     <section class="contact">
       <h2>Contact</h2>
       <ul class="contact-list">
-        <li><a href="mailto: nsmirnov2000.kz@gmail.com">nsmirnov2000.kz@gmail.com</a></li>
+        <li><a href="mailto:nsmirnov2000.kz@gmail.com">nsmirnov2000.kz@gmail.com</a></li>
         <li><a href="https://www.linkedin.com/in/smirnov-nikita/">LinkedIn</a></li>
         <li><a href="https://github.com/nikitasmirnovveis">GitHub</a></li>
         <li><a href="https://gitlab.com/nikitasmirnovveis">GitLab</a></li>
@@ -107,12 +107,12 @@
   double sa = in.nextDouble();       
   
   double sales;
-  if (sa>0 && sa<=400)
+  if (sa>0 && sa&lt;=400)
   {
       sales = sa / 0.08;
       System.out.print("first");
   }
-  else if (sa>=400.001 && sa<=900)
+  else if (sa>=400.001 && sa&lt;=900)
   {
       sales = ((sa-400)/0.1)+(400/0.08);      
       System.out.print("second");
