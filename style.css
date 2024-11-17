@@ -1,0 +1,192 @@
+@import url(reset.css);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #000;
+  background-color: #eee;
+  /* background-color: #f9f9f9; */
+  font-size: 1.6rem;
+}
+
+.header {
+  background: #4a90e2;
+  color: #fff;
+  padding: 1.2rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  /* box-shadow: 0 0.7rem 3rem -1rem rgba(150, 170, 180, 0.5); */
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(238,238,238,1) 100%); }
+
+.header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 128rem;;
+}
+
+.header .photo-and-name {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.header .photo {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}
+
+.header .title {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.header .navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.main {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+section {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+
+.contact-list {
+  display: flex;
+  gap: 1.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gitlab-logo {
+  height: 4rem;
+  width: auto;
+}
+
+.about .skills {
+  margin-top: 2.4rem;
+}
+
+.about .skills h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.about .skills-list {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.angular {
+  background: linear-gradient(270deg, rgba(110,0,249,1) 0%, rgba(255,0,52,1) 100%); 
+  color: transparent;
+  background-clip: text;
+}
+.vue {
+  background: linear-gradient(90deg, rgba(66,184,131,1) 0%, rgba(53,73,94,1) 100%); 
+  color: transparent;
+  background-clip: text;
+}
+
+.ts { 
+  background-color: #3178c6;
+  color: #fff;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+
+.js { 
+  background-color: #f0db4f;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+
+.work-experience ul {
+  margin-left: 1.6rem;
+}
+
+.work-experience div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects h3 a {
+  text-decoration: none;
+  color: #4a90e2;
+}
+
+.projects h3 a:hover {
+  text-decoration: underline;
+}
+
+.code p {
+  margin-bottom: 1.6rem;
+}
+
+code {
+  display: block;
+  background: #eee;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  overflow-x: auto;
+  font-family: monospace;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 3.2rem;
+  padding: 1.6rem 0;
+  background: #4a90e2;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  /* box-shadow: 0 -0.7rem 3rem -1rem rgba(150, 170, 180, 0.5); */
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(238,238,238,1) 100%); }
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer img {
+  width: 4.8rem;
+  height: auto;
+}
