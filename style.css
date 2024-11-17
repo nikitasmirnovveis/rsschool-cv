@@ -128,8 +128,12 @@ section {
 }
 
 .work-experience ul {
-  list-style: disc inside;
   margin-left: 1.6rem;
+}
+
+.work-experience div {
+  display: flex;
+  justify-content: space-between;
 }
 
 .projects h3 a {
