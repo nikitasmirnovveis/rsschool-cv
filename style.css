@@ -127,6 +127,12 @@ section {
   border-radius: 0.3rem;
 }
 
+.js { 
+  background-color: #f0db4f;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+
 .work-experience ul {
   margin-left: 1.6rem;
 }
