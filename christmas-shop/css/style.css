@@ -381,7 +381,7 @@ main .cta h2 {
   letter-spacing: 0.384rem;
   text-transform: uppercase;
 }
-main .cta button {
+main .cta .explore {
   color: var(--Static-White, #fff);
   text-align: center;
   border: none;
@@ -398,7 +398,7 @@ main .cta button {
   border-radius: 2rem;
   width: fit-content;
 }
-main .cta button a {
+main .cta .explore a {
   text-decoration: none;
   color: white;
 }
