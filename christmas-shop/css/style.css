@@ -28,6 +28,7 @@ h6 {
   max-width: 1440px;
   width: 100%;
   background-color: #fff;
+  overflow-x: hidden;
 }
 .header__content {
   margin: 0 82px;
@@ -96,6 +97,7 @@ main {
   justify-content: center;
   background-image: url(../images/snow.png);
   background-repeat: repeat-y;
+  overflow-x: hidden;
 }
 main h1 {
   color: var(--Static-White, #fff);
@@ -473,6 +475,7 @@ footer {
   max-width: 1440px;
   width: 100%;
   padding: 60px 0;
+  overflow-x: hidden;
 }
 footer .contacts {
   margin: 0 82px;
