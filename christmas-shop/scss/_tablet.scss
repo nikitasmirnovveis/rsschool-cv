@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px) {
+  header,
+  main,
+  footer {
+    overflow-x: hidden;
+  }
+  .header {
+    &__content {
+      margin: 0;
+      // padding: 1.2rem;
+    }
+    &__group2 {
+      display: none;
+    }
+    &__burger-wrapper {
+      display: block;
+      border: none;
+      background-color: transparent;
+    }
+  }
+  main {
+    .about {
+      margin: 0 1.2rem;
+      .santa {
+        aspect-ratio: unset;
+      }
+      img {
+        object-fit: cover;
+      }
+    }
+    .slider {
+      &__content {
+        margin-left: 8px;
+      }
+      &__control {
+        margin-right: 1.2rem;
+      }
+    }
+    .best-gifts {
+      .cards {
+        margin: 0;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  footer {
+    .contacts {
+      margin: 0 1.2rem 60px;
+      flex-direction: column;
+      .contact-card {
+        width: unset;
+      }
+    }
+  }
+}
