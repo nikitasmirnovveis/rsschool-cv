@@ -28,6 +28,7 @@ h6 {
 }
 .header__content {
   margin: 0 82px;
+  padding: 1.2rem;
   display: flex;
   font-size: 1.2rem;
   font-style: normal;
@@ -56,19 +57,29 @@ h6 {
   padding: 12px 20px;
   transition: all 0.3s ease;
 }
-.header__group2 ul li:hover {
-  border-radius: 1.2rem;
-  background: var(--Primary-10, rgba(255, 70, 70, 0.1));
-}
-.header__group2 ul li:hover a {
-  color: var(--Primary, #ff4646);
+@media screen and (min-width: 769px) {
+  .header__group2 ul li:hover {
+    border-radius: 1.2rem;
+    background: var(--Primary-10, rgba(255, 70, 70, 0.1));
+  }
+  .header__group2 ul li:hover a {
+    color: var(--Primary, #ff4646);
+  }
 }
 .header__group2 ul .non-interactive {
   pointer-events: none;
+  border-radius: 1.2rem;
+  background: var(--Primary-10, rgba(255, 70, 70, 0.1));
+}
+.header__group2 ul .non-interactive a {
+  color: var(--Primary, #ff4646);
 }
 .header__group2 ul a {
   text-decoration: none;
   color: black;
+}
+.header__burger-wrapper {
+  display: none;
 }
 
 main {
@@ -313,8 +324,10 @@ main .best-gifts .card {
   justify-content: space-between;
   transition: all 0.3s ease-in-out;
 }
-main .best-gifts .card:hover {
-  transform: scale(1.05);
+@media screen and (min-width: 769px) {
+  main .best-gifts .card:hover {
+    transform: scale(1.05);
+  }
 }
 main .best-gifts .card .text {
   background-color: white;
@@ -473,8 +486,10 @@ footer .contacts .contact-card {
   background: var(--Content-Background, #ecf3f8);
   transition: all 0.3s ease-in-out;
 }
-footer .contacts .contact-card:hover {
-  transform: scale(1.05);
+@media screen and (min-width: 769px) {
+  footer .contacts .contact-card:hover {
+    transform: scale(1.05);
+  }
 }
 footer .contacts .contact-card a {
   width: 100%;
@@ -555,23 +570,17 @@ footer .bottom .made-in a {
   background-image: none;
 }
 .gifts main .best-gifts {
+  background: url("/christmas-shop/images/bg-garland.png") top center no-repeat;
+  background-size: contain;
   margin: 0;
   margin-bottom: 60px;
 }
 .gifts main .best-gifts .gifts-top {
-  margin-bottom: 32px;
   position: relative;
-}
-.gifts main .best-gifts .gifts-top #garland {
-  max-width: 1440px;
-  width: 100%;
-  height: 20rem;
-  object-fit: cover;
 }
 .gifts main .best-gifts .gifts-top__content {
   margin-top: 60px;
   width: 100%;
-  position: absolute;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -595,12 +604,16 @@ footer .bottom .made-in a {
   padding: 12px 20px;
   transition: all 0.3s ease-in-out;
 }
-.gifts main .best-gifts .categories .category:hover {
-  border-radius: 1.2rem;
-  background: var(--Static-White-20, rgba(255, 255, 255, 0.2));
+@media screen and (min-width: 769px) {
+  .gifts main .best-gifts .categories .category:hover {
+    border-radius: 1.2rem;
+    background: var(--Static-White-20, rgba(255, 255, 255, 0.2));
+  }
 }
 .gifts main .best-gifts .categories .category.active {
   pointer-events: none;
+  border-radius: 1.2rem;
+  background: var(--Static-White-20, rgba(255, 255, 255, 0.2));
 }
 
 .allura {
@@ -629,6 +642,128 @@ footer .bottom .made-in a {
 
 .wrap {
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  main,
+  footer {
+    overflow-x: hidden;
+  }
+  .header__content {
+    margin: 0;
+  }
+  .header__group2 {
+    display: none;
+  }
+  .header__burger-wrapper {
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+  main .about {
+    margin: 0 1.2rem;
+  }
+  main .about .santa {
+    aspect-ratio: unset;
+  }
+  main .about img {
+    object-fit: cover;
+  }
+  main .slider__content {
+    margin-left: 8px;
+  }
+  main .slider__control {
+    margin-right: 1.2rem;
+  }
+  main .best-gifts .cards {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  footer .contacts {
+    margin: 0 1.2rem 60px;
+    flex-direction: column;
+  }
+  footer .contacts .contact-card {
+    width: unset;
+  }
+}
+@media screen and (max-width: 380px) {
+  header, main, footer {
+    overflow-x: hidden;
+  }
+  .header__group2 {
+    display: none;
+  }
+  .header__burger-wrapper {
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+  main .hero h1 {
+    max-width: 380px;
+  }
+  main .hero__content {
+    padding: 120px 0;
+  }
+  main .about {
+    flex-direction: column;
+    margin: 0 1.2rem;
+  }
+  main .about .text {
+    padding: 2rem;
+    margin: 0;
+  }
+  main .about__subtitle {
+    max-width: 380px;
+    white-space: unset;
+  }
+  main .about__description {
+    max-width: 380px;
+    white-space: unset;
+  }
+  main .about .santa {
+    aspect-ratio: unset;
+  }
+  main .about img {
+    object-fit: cover;
+  }
+  main .slider__content {
+    margin-left: 8px;
+  }
+  main .slider__control {
+    margin-right: 1.2rem;
+  }
+  main .best-gifts .cards {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  main .cta {
+    padding: 0 1.2rem;
+  }
+  main .cta h2 {
+    max-width: 380px;
+  }
+  main .cta__content {
+    margin: 0;
+    margin-top: -40px;
+  }
+  footer .contacts {
+    margin: 0 1.2rem 60px;
+    flex-direction: column;
+  }
+  footer .contacts .contact-card {
+    width: unset;
+  }
+  .gifts main .best-gifts {
+    padding: 0 1.2rem;
+  }
+  .gifts main .best-gifts .categories {
+    gap: 0;
+  }
+  .gifts main .best-gifts .categories .category {
+    padding: 1.1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
