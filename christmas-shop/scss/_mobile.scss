@@ -1,0 +1,97 @@
+@media screen and (max-width: 380px) {
+ header, main, footer {
+   overflow-x: hidden;
+ }
+  .header {
+    &__content {
+      // margin: 0;
+      // padding: 1.2rem;
+    }
+    &__group2 {
+      display: none;
+    }
+    &__burger-wrapper {
+      display: block;
+      border: none;
+      background-color: transparent;
+    }
+  }
+  main {
+    .hero {
+      h1 {
+        max-width: 380px;
+      }
+      &__content {
+        padding: 120px 0
+      }
+    }
+    .about {
+      flex-direction: column;
+      margin: 0 1.2rem;
+      .text {
+        padding:  2rem;
+        margin: 0;
+      }
+      &__subtitle {
+        max-width: 380px;
+        white-space: unset;
+      }
+      &__description {
+        max-width: 380px;
+        white-space: unset;
+      }
+      .santa {
+        aspect-ratio: unset;
+      }
+      img {
+        object-fit: cover;
+      }
+    }
+    .slider {
+      &__content {
+        margin-left: 8px;
+      }
+      &__control {
+        margin-right: 1.2rem;
+      }
+    }
+    .best-gifts {
+      .cards {
+        margin: 0;
+        flex-wrap: wrap;
+      }
+    }
+    .cta {
+      padding: 0 1.2rem;
+      h2 {
+        max-width: 380px;
+      }
+      &__content {
+        margin: 0;
+        margin-top: -40px;
+      }
+    }
+  }
+  footer {
+    .contacts {
+      margin: 0 1.2rem 60px;
+      flex-direction: column;
+      .contact-card {
+        width: unset;
+      }
+    }
+  }
+  .gifts {
+    main {
+      .best-gifts {
+        padding: 0 1.2rem;
+        .categories {
+          gap: 0;
+          .category {
+            padding: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
